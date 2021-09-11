@@ -27,11 +27,11 @@ public class SaleDTO {
 	}
 	
 	public SaleDTO(Sale entity) {
-		this.id = entity.getId();
-		this.visited = entity.getDeals();
-		this.deals = entity.getDeals();
-		this.amount = entity.getAmount();
-		this.date = entity.getDate();
+		id = entity.getId();
+		visited = entity.getDeals();
+		deals = entity.getDeals();
+		amount = entity.getAmount();
+		date = entity.getDate();
 		seller = new SellerDTO(entity.getSeller());
 	}
 
@@ -82,7 +82,7 @@ public class SaleDTO {
 	public void setSeller(SellerDTO seller) {
 		this.seller = seller;
 	}
-	
+
 	
 	
 }
